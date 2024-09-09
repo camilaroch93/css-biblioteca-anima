@@ -1,24 +1,67 @@
-*{
+* {
     padding: 0;
     outline: none;
     margin: 0;
     box-sizing: border-box;
     font-family: fontegame;
-    list-style: none; /*"retira as bolinhas da lista" */
+    list-style: none;
+    /*"retira as bolinhas da lista" */
 }
 
 @font-face {
-    font-family: "fontegame"; 
+    font-family: "fontegame";
     src: url(fontegame.ttf);
 }
 
-body{
+body {
     background-image: url(imgs/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.logos{
-    width: 20rem;
+#imgprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 6rem;
+    padding-top: 10rem;
+    animation: pulse infinite;
+    animation-duration: 2s;
+}
+
+.logo {
+    width: 30rem;
+}
+
+.logos {
+    width: 30rem;
+    padding: 50px;
+
+    &:hover {
+        animation: pulse;
+        animation-duration: 1s;
+    }
+}
+
+#jogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+#menu {
+    display: flex;
+    padding-left: 15rem;
+    font-size: 70px;
+    color: rgb(238, 255, 0);
+
+    li:hover {
+        animation: pulse;
+        animation-duration: 1s;
+        color: aliceblue;
+    }
 }
