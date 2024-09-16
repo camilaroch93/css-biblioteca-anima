@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* uso da raiz seletora */
 :root {
     --grande: 36px;
    }
@@ -25,6 +26,7 @@
        height: 100vh;
    }
    
+   /* responsividade */
    @media (width <= 600px) {
        :root {
            --grande: 18px;
