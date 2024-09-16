@@ -63,5 +63,8 @@ body {
         animation: pulse;
         animation-duration: 1s;
         color: aliceblue;
+        background-clip: text; color: transparent;
+        background-image: linear-gradient(aliceblue, yellow,green);
+
     }
 }
